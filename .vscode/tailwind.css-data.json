@@ -1,0 +1,45 @@
+{
+  "version": 1.1,
+  "atDirectives": [
+    {
+      "name": "@theme",
+      "description": "Tailwind CSS v4: defines design tokens (colors, fonts, spacing, etc.) as CSS variables that generate corresponding utility classes. https://tailwindcss.com/docs/theme"
+    },
+    {
+      "name": "@source",
+      "description": "Tailwind CSS v4: adds a source file or directory for class detection that Tailwind wouldn't otherwise scan. https://tailwindcss.com/docs/detecting-classes-in-source-files"
+    },
+    {
+      "name": "@utility",
+      "description": "Tailwind CSS v4: registers a custom utility class that participates in variant/important handling like built-in utilities. https://tailwindcss.com/docs/adding-custom-styles#adding-custom-utilities"
+    },
+    {
+      "name": "@variant",
+      "description": "Tailwind CSS v4: applies a Tailwind variant to a rule inside a custom CSS file. https://tailwindcss.com/docs/adding-custom-styles#applying-a-variant-in-bulk"
+    },
+    {
+      "name": "@custom-variant",
+      "description": "Tailwind CSS v4: defines a custom variant. https://tailwindcss.com/docs/adding-custom-styles#adding-custom-variants"
+    },
+    {
+      "name": "@plugin",
+      "description": "Tailwind CSS v4: loads a legacy JS-based plugin. https://tailwindcss.com/docs/adding-custom-styles#using-a-javascript-plugin"
+    },
+    {
+      "name": "@config",
+      "description": "Tailwind CSS v4: loads a legacy JS config file for compatibility with Tailwind v3 setups. https://tailwindcss.com/docs/upgrade-guide#using-a-javascript-config-file"
+    },
+    {
+      "name": "@apply",
+      "description": "Tailwind CSS: inlines existing utility classes into a custom CSS rule. https://tailwindcss.com/docs/functions-and-directives#apply-directive"
+    },
+    {
+      "name": "@tailwind",
+      "description": "Tailwind CSS v3 and earlier: inserts Tailwind's base/components/utilities styles. https://tailwindcss.com/docs/functions-and-directives#tailwind-directive"
+    },
+    {
+      "name": "@reference",
+      "description": "Tailwind CSS v4: imports theme/utility definitions for use with @apply without duplicating output CSS, commonly used in Vue/Svelte <style> blocks. https://tailwindcss.com/docs/functions-and-directives#reference-directive"
+    }
+  ]
+}
