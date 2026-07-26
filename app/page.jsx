@@ -1,9 +1,17 @@
 import Image from 'next/image';
+import Television from './components/Television';
+import Layout from './components/Layout';
 
 export default function Home() {
   return (
-    <div className='flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black crt'>
-      <p>Hello there</p>
-    </div>
+    <Television>
+      <Layout
+        header={'header'}
+        footer={'footer'}
+        left={'left'}
+        right={'right'}
+        main={'main'}
+      />
+    </Television>
   );
 }
