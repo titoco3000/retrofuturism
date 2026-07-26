@@ -20,12 +20,19 @@
 
 body {
   height: 100%;
+  overflow: hidden;
   background: var(--background);
   color: var(--foreground);
   font-family: monospace;
+  
+  /* perspective: 1000px; */
 }
 
-.crt {
+/* .crt{
+  transform: rotate3d(1, 0, 0, 2deg);
+} */
+
+.crt-overlay {
   background: linear-gradient(to bottom, transparent 50%, rgba(255, 255, 255, 0.03) 50%);
   background-size: 100% 10px;
   
