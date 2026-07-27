@@ -2,17 +2,18 @@ import Image from 'next/image';
 import Television from './components/Television';
 import Layout from './components/Layout';
 import Filter from './components/Filter';
+import Panel from './components/Panel';
 
 export default function Home() {
   return (
     <Television>
       <Layout
-        header={'header'}
-        footer={'footer'}
-        left={'left'}
-        right={'right'}
+        header={<Panel>header</Panel>}
+        footer={<Panel>footer</Panel>}
+        left={<Panel className='h-full'>left</Panel>}
+        right={<Panel animation='x-reserved-w'>Praise the omnissiah</Panel>}
         main={
-          <div className='p-3'>
+          <Panel>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. In,
             consequuntur. Rerum, error numquam iste sint aperiam placeat amet.
             Ducimus quaerat doloremque, iure minima cum obcaecati facere nobis
@@ -43,7 +44,7 @@ export default function Home() {
             consequuntur. Rerum, error numquam iste sint aperiam placeat amet.
             Ducimus quaerat doloremque, iure minima cum obcaecati facere nobis
             officiis nulla at!
-          </div>
+          </Panel>
         }
       />
     </Television>
