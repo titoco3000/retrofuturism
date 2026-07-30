@@ -44,7 +44,7 @@ function generateSphereMap(width, height, bulge, canvas) {
 
 export default function WithHoles({
   children,
-  bulge = 0.4,
+  bulge = 0.8,
   minSize = 10,
   className = '',
 }) {

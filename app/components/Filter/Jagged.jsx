@@ -161,22 +161,6 @@ export default function Jagged({
           }}
         >
           {children}
-
-          {/* --- Variable Blur Overlay --- */}
-          <div
-            className='absolute inset-0 pointer-events-none z-10'
-            style={{
-              // Adjust the px value to change the maximum blur intensity at the corners
-              backdropFilter: 'blur(1px)',
-              WebkitBackdropFilter: 'blur(1px)',
-
-              // The gradient dictates the fade. 'transparent' means no blur, 'black' means full blur.
-              maskImage:
-                'radial-gradient(ellipse at center, transparent 40%, black 95%)',
-              WebkitMaskImage:
-                'radial-gradient(ellipse at center, transparent 40%, black 95%)',
-            }}
-          />
         </div>
       </div>
     </div>

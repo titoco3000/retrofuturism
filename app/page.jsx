@@ -18,7 +18,7 @@ export default function Home() {
         left={<Panel className='h-full'>left</Panel>}
         right={<Panel animation='x-reserved-w'>Praise the omnissiah</Panel>}
         main={
-          <Panel>
+          <Panel className='h-full p-1'>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. In,
             consequuntur. Rerum, error numquam iste sint aperiam placeat amet.
             Ducimus quaerat doloremque, iure minima cum obcaecati facere nobis
@@ -49,11 +49,15 @@ export default function Home() {
             consequuntur. Rerum, error numquam iste sint aperiam placeat amet.
             Ducimus quaerat doloremque, iure minima cum obcaecati facere nobis
             officiis nulla at!
+            <br />
+            <br />
+            <br />
             <input
               type='checkbox'
-              value={jagged}
+              checked={jagged}
               onChange={(e) => setJagged(e.target.checked)}
-            />
+            />{' '}
+            toggle render mode
           </Panel>
         }
       />
