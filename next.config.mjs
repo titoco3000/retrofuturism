@@ -1,6 +1,12 @@
+const repoName = 'retrofuturism';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  output: 'export',
+  basePath: `/${repoName}`,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
