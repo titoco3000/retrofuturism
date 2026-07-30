@@ -29,8 +29,8 @@ function generateTexture(width, height, canvas) {
       const displacementY =
         normalizedYDistance * (normalizedXDistance * normalizedXDistance);
 
-      imageData.data[pixelIndex] = 128 + displacementX * 255;
-      imageData.data[pixelIndex + 1] = 128 + displacementY * 255;
+      imageData.data[pixelIndex] = Math.round(128 + displacementX * 255);
+      imageData.data[pixelIndex + 1] = Math.round(128 + displacementY * 255);
 
       imageData.data[pixelIndex + 2] = 0;
       imageData.data[pixelIndex + 3] = 255;
@@ -43,8 +43,8 @@ function generateTexture(width, height, canvas) {
 
 export default function Jagged({
   children,
-  bulge = 0.05,
-  minSize = 256,
+  bulge = 0.3,
+  minSize = 10,
   className = '',
   showDisplacementTexture = false,
 }) {
@@ -90,13 +90,11 @@ export default function Jagged({
         // 1. Assign the generated data URL
         feImageRef.current.setAttribute('href', dataUrl);
 
-        // 2. FORCE the image to exactly overlay your target div's coordinates
-        feImageRef.current.setAttribute('x', '0');
-        feImageRef.current.setAttribute('y', '0');
-        feImageRef.current.setAttribute('width', width);
-        feImageRef.current.setAttribute('height', height);
-
-        const targetScale = Math.max(width, 1000) * bulge;
+        // feImageRef.current.setAttribute('x', '0');
+        // feImageRef.current.setAttribute('y', '0');
+        // feImageRef.current.setAttribute('width', width);
+        // feImageRef.current.setAttribute('height', height);
+        const targetScale = Math.max(width, height, 1000) * bulge;
         feDisplacementRef.current.setAttribute('scale', targetScale);
       }
     });

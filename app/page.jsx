@@ -8,7 +8,7 @@ import Panel from './components/Panel';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [jagged, setJagged] = useState(false);
+  const [jagged, setJagged] = useState(true);
 
   return (
     <Television jagged={jagged}>
