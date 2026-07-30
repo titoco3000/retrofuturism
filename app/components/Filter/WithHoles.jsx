@@ -42,7 +42,7 @@ function generateSphereMap(width, height, bulge, canvas) {
   return canvas.toDataURL();
 }
 
-export default function Filter({
+export default function WithHoles({
   children,
   bulge = 0.4,
   minSize = 10,

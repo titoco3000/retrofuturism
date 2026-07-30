@@ -1,8 +1,8 @@
 import Filter from './Filter';
 
-export default function Television({ children }) {
+export default function Television({ jagged = false, children }) {
   return (
-    <Filter className='crt'>
+    <Filter className='crt' jagged={jagged}>
       <div
         className='h-full relative bg-[#121513] text-[#4af626] font-mono overflow-hidden rounded-2xlshadow-[inset_0_0_60px_rgba(0,0,0,0.9),inset_0_0_20px_rgba(0,0,0,0.7)]'
         // style={{
