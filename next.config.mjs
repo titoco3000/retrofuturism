@@ -1,9 +1,10 @@
 const repoName = 'retrofuturism';
+const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: `/${repoName}`,
+  basePath: isGithubActions ? `/${repoName}` : '',
   images: {
     unoptimized: true,
   },
